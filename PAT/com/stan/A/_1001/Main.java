@@ -1,4 +1,4 @@
-package com.stan._1001;
+package com.stan.A._1001;
 
 import java.io.BufferedReader;
 import java.io.IOException;
