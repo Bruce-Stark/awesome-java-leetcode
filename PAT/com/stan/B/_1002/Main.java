@@ -3,23 +3,40 @@ package com.stan.B._1002;
 import java.util.Scanner;
 
 public class Main {
+//    public static void main(String[] args) {
+//        String str = new Scanner(System.in).nextLine();
+//        char[] chars = str.toCharArray();
+//        int sum = 0;
+//        for (int i = 0; i < chars.length; i++) {
+//            sum += chars[i] - '0';
+//        }
+//        char[] c = (sum + "").toCharArray();
+//        boolean flag = false;
+//        for (int i = 0; i < c.length; ++i) {
+//            if (flag) {
+//                System.out.print(" ");
+//            }
+//            out(c[i]);
+//            flag = true;
+//        }
+//    }
+
     public static void main(String[] args) {
         String str = new Scanner(System.in).nextLine();
         char[] chars = str.toCharArray();
-        int sum = 0;
-        for (int i = 0; i < chars.length; i++) {
+        int sum =0;
+        for(int i = 0; i < chars.length; i++) {
             sum += chars[i] - '0';
         }
+        // System.out.println(sum);
         char[] c = (sum + "").toCharArray();
+        // System.out.println(c);
         boolean flag = false;
-        for (int i = 0; i < c.length; ++i) {
-            if (flag) {
-                System.out.print(" ");
-            }
+        for(int i = 0; i < c.length; i++) {
+            if(flag) System.out.print(" ");
             out(c[i]);
             flag = true;
         }
-
     }
 
     private static void out(char c) {
@@ -54,7 +71,6 @@ public class Main {
             case '0':
                 System.out.print("ling");
                 break;
-
         }
     }
 }
