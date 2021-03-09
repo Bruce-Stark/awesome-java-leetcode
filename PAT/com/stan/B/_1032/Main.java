@@ -1,6 +1,5 @@
 package com.stan.B._1032;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {

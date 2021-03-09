@@ -3,38 +3,21 @@ package com.stan.B._1002;
 import java.util.Scanner;
 
 public class Main {
-//    public static void main(String[] args) {
-//        String str = new Scanner(System.in).nextLine();
-//        char[] chars = str.toCharArray();
-//        int sum = 0;
-//        for (int i = 0; i < chars.length; i++) {
-//            sum += chars[i] - '0';
-//        }
-//        char[] c = (sum + "").toCharArray();
-//        boolean flag = false;
-//        for (int i = 0; i < c.length; ++i) {
-//            if (flag) {
-//                System.out.print(" ");
-//            }
-//            out(c[i]);
-//            flag = true;
-//        }
-//    }
 
     public static void main(String[] args) {
         String str = new Scanner(System.in).nextLine();
         char[] chars = str.toCharArray();
         int sum =0;
-        for(int i = 0; i < chars.length; i++) {
-            sum += chars[i] - '0';
+        for (char aChar : chars) {
+            sum += aChar - '0';
         }
         // System.out.println(sum);
         char[] c = (sum + "").toCharArray();
         // System.out.println(c);
         boolean flag = false;
-        for(int i = 0; i < c.length; i++) {
-            if(flag) System.out.print(" ");
-            out(c[i]);
+        for (char value : c) {
+            if (flag) System.out.print(" ");
+            out(value);
             flag = true;
         }
     }
